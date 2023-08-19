@@ -3,7 +3,7 @@ import { createTheme } from "@mui/material/styles";
 
 // color design tokens
 export const tokens = (mode) => ({
-    ...(mode === 'dark' ? {
+    ...(mode === 'light' ? {
         'grey': {
             DEFAULT: '#666666',
             50: '#C2C2C2',
@@ -94,17 +94,17 @@ export const tokens = (mode) => ({
 
         'primary': {
             50: '#000000',
-            100: '#000000',
-            200: '#000000',
-            300: '#000000',
-            400: '#020305',
-            500: '#141B2B',
-            600: '#212C47',
-            700: '#2E3E63',
-            800: '#3B4F7F',
-            900: '#48619A',
-            950: '#4E6AA8',
-            DEFAULT: '#141B2B',
+            100: '#07090F',
+            200: '#192135',
+            300: '#2A3A5B',
+            400: '#3C5282',
+            500: '#4E6AA8',
+            600: '#6780B8',
+            700: '#8297C5',
+            800: '#9EAED2',
+            900: '#BAC6DF',
+            950: '#C8D1E6',
+            DEFAULT: '#4E6AA8',
         },
         'greenAccent': {
             50: '#061713',
@@ -162,7 +162,7 @@ export const themeSettings = (mode) => {
             ...(mode === 'dark'
                 ? {
                     primary: {
-                        main: colors.primary[500],
+                        main: colors.primary[400],
                     },
                     secondary: {
                         main: colors.greenAccent[500],
@@ -173,7 +173,7 @@ export const themeSettings = (mode) => {
                         light: colors.grey[100],
                     },
                     background: {
-                        default: colors.primary[500]
+                        default: colors.primary[300]
                     }
                 } : {
                     primary: {

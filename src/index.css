@@ -6,7 +6,7 @@ body,
 .app,
 .content {
   height: 100%;
-  width: 200%;
+  width: 100%;
   font-family: 'Source Sans 3', sans-serif;
 }
 
