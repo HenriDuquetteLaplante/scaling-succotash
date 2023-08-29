@@ -45,7 +45,7 @@ const SideBar = () => {
         <Box
             sx={{
                 '& .pro-sidebar-inner': {
-                    background: `${colors.primary[400]} !important`
+                    background: `#293042 !important`
                 },
                 '& .pro-icon-wrapper': {
                     backgroundColor: "transparent !important"
@@ -61,7 +61,10 @@ const SideBar = () => {
                 }
             }}
         >
-            <ProSidebar collapsed={isCollapsed}>
+            <ProSidebar
+                collapsed={isCollapsed}
+                className='sidebar'
+            >
                 <Menu iconShape="square">
                     {/* LOGO AND MENU ICON */}
                     <MenuItem
